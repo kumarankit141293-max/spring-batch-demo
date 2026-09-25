@@ -13,6 +13,7 @@ import org.springframework.core.io.ClassPathResource;
 public class StudentItemReader {
     @Bean
     public FlatFileItemReader<Student> csvReader() {
+        //ye FlatFileItemReader<Student> Student class ke liye hai
         FlatFileItemReader<Student> reader = new FlatFileItemReader<>();
         // src/main/resources/users_100.csv को पढ़ेगा
         reader.setResource(new ClassPathResource("users_100.csv"));
